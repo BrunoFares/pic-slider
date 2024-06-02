@@ -25,6 +25,7 @@ div.appendChild(fish);
 div.appendChild(jro);
 div.appendChild(yv);
 
+const spans = document.querySelectorAll('p button');
 const images = document.querySelectorAll('img');
 
 cycle(0);
@@ -49,5 +50,10 @@ function cycle(choice) {
         element.style.display = 'none';
     });
     
+    spans.forEach(element => {
+        element.textContent = '∙';
+    })
+
     images[(choice + 5) % 5].style.display = 'block';
+    spans[(choice + 5) % 5].textContent = '•';
 }

@@ -7,6 +7,13 @@ body {
     flex-direction: column;
 }
 
+p {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 35%;
+}
+
 div {
     display: flex;
     justify-content: center;
@@ -23,6 +30,10 @@ img {
 button {
     border: 0;
     border-radius: 5px;
+}
+
+p button, p button:hover {
+    background-color: white;
 }
 
 button:hover {
