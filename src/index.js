@@ -17,7 +17,7 @@ fish.src = Fischer;
 jro.src = Oppenheimer;
 yv.src = MisterV;
 
-const div = document.querySelector('div');
+const div = document.querySelector('div.imgs');
 
 div.appendChild(leb);
 div.appendChild(titi);
