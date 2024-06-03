@@ -57,3 +57,5 @@ function cycle(choice) {
     images[(choice + 5) % 5].style.display = 'block';
     spans[(choice + 5) % 5].textContent = '•';
 }
+
+setInterval(function() { cycle(1) }, 5000);
